@@ -131,3 +131,5 @@ You'll be loading the data using Ember Data. You might have noticed that we have
 Check the tests to deduce which CSS classes you need to apply to your templates.
 
 **Happy Hacking**
+
+<a href='https://learn.co/lessons/ember-routes-dynamic-segments' data-visibility='hidden'>View this lesson on Learn.co</a>

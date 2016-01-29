@@ -132,4 +132,4 @@ Check the tests to deduce which CSS classes you need to apply to your templates.
 
 **Happy Hacking**
 
-<a href='https://learn.co/lessons/ember-routes-dynamic-segments' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ember-routes-dynamic-segments' title='Ember Routes - Dynamic Segment'>Ember Routes - Dynamic Segment</a> on Learn.co and start learning to code for free.</p>

@@ -25,7 +25,7 @@ describe('Acceptance: SeeAllArtists', function() {
     server.createList('artist', 10);
     visit('/');
     // create link that goes to '/artists' with a class of all-artists
-    click('.all-artists');
+    click('.all-artists a');
 
     andThen(function() {
       // put each artist in an element with class of artist

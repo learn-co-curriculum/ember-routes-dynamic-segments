@@ -37,9 +37,10 @@ describe('Acceptance: SeeAllArtists', function() {
     // make a single artist
     let artist = server.create('artist', {first_name: "Steven", last_name: "Nunez"});
     visit('/');
-    click('.all-artists');
+    click('.all-artists a');
 
     andThen(function(){
+      // debugger;
       let $artist = $('.artist a').first();
       expect($artist.attr('href')).to.eq(`/artists/${artist.id}`);
       expect($artist.text()).to.eq('Steven Nunez');

@@ -1,6 +1,7 @@
 {{#each model as |artist|}}
-  <div class="artist">
-    {{link-to artist.fullName "artists.artist" artist}}
-  </div>
+  <li class="artist">
+    {{#link-to "artists.artist" artist}}{{artist.fullName}}{{/link-to}}
+  </li>
 {{/each}}
+
 {{outlet}}

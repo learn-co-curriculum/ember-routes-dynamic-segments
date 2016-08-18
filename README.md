@@ -1,7 +1,14 @@
 # Ember Routes - Dynamic Segment
-In this lab we're going to get into creating dynamic segments.
 
-### In rails
+## Overview 
+In this lab we'll create urls with dynamic segments.
+
+## Objectives
+1. Set up routes 
+2. Load data using Ember data
+3. Generate a route and have it automatically write the path
+
+### In Rails
 
 We create urls with dynamic segments like this.
 
@@ -22,6 +29,7 @@ end
 We access the dynamic portion of the url using `params`
 
 ### In Ember
+
 We create urls with dynamic segments like this.
 
 In our router:
@@ -49,6 +57,7 @@ We access the dynamic portion of the url using `params`.
 Let's get into it.
 
 ## Dynamic Segments and the path
+
 In Ember, all routes are named. Rails has this option with the `:as` option in routes, but Ember generates the name for you. This is useful when we want to reference a route.
 
 In our example router, the route for `/artists` is simply `artists`. We use this route name in helpers like the `link-to` helper.
@@ -65,6 +74,7 @@ The path to something like `/artists/1` is named `artists.artist`. Using this in
 Since it's a dynamic segment, we have to pass in the part that's *dynamic*.
 
 ## Models
+
 Routes are responsible for loading a model. We're going to be using [Ember Data](http://guides.emberjs.com/v2.1.0/models/) to fetch data from an endpoint. We'll be covering Ember Data in more detail in future lessons but for now, all we need to know is how to get all `artists` and how to get a single `artist`.
 
 Within our route's `model` method, we can get all of the artists by returning the result of `this.store.findAll('artist')`. This works because we have a model in `app/models/artist.js`.
@@ -91,7 +101,8 @@ export default Ember.Route.extend({
   }
 });
 ```
-Actually... I lied. Here's some Ember Magic. If you named your dynamic segment after a model, it will try to look that model up automatically.
+
+Actually... we lied. Here's some Ember Magic. If you named your dynamic segment after a model, it will try to look that model up automatically.
 
 ![MAGIC](http://media2.giphy.com/media/Es3FISPjOZzAA/200.gif)
 
